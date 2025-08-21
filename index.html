@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup Business Plan - Zdravé Maznáčiky</title>
+    <style>
+      @media print {
+        body {
+          margin: 0;
+        }
+        .no-print {
+          display: none;
+        }
+        img {
+          max-width: 100% !important;
+          height: auto !important;
+        }
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 210mm;
+        margin: 0 auto;
+        padding: 20mm;
+        background: white;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+        border-bottom: 3px solid #2c5f5f;
+        padding-bottom: 20px;
+      }
+
+      .header h1 {
+        color: #2c5f5f;
+        font-size: 2.5em;
+        margin: 0;
+        font-weight: 700;
+      }
+
+      .header h2 {
+        color: #666;
+        font-size: 1.2em;
+        margin: 10px 0 0 0;
+        font-weight: 400;
+      }
+
+      .section {
+        margin-bottom: 35px;
+        page-break-inside: avoid;
+      }
+
+      .section h2 {
+        color: #2c5f5f;
+        font-size: 1.8em;
+        border-left: 5px solid #2c5f5f;
+        padding-left: 15px;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+
+      .section h3 {
+        color: #2c5f5f;
+        font-size: 1.4em;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      .section h4 {
+        color: #2c5f5f;
+        font-size: 1.2em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+
+      p {
+        text-align: justify;
+        margin-bottom: 12px;
+      }
+
+      ul {
+        margin-bottom: 15px;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      .highlight {
+        background-color: #f0f7f7;
+        padding: 15px;
+        border-left: 4px solid #2c5f5f;
+        margin: 20px 0;
+      }
+
+      .color-palette {
+        display: flex;
+        gap: 20px;
+        margin: 20px 0;
+        flex-wrap: wrap;
+      }
+
+      .color-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .color-square {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #ddd;
+      }
+
+      .tech-stack {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin: 20px 0;
+      }
+
+      .tech-item {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 4px solid #2c5f5f;
+      }
+
+      .tech-item strong {
+        color: #2c5f5f;
+      }
+
+      .financial-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      .financial-table th,
+      .financial-table td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+      }
+
+      .financial-table th {
+        background-color: #2c5f5f;
+        color: white;
+        font-weight: 600;
+      }
+
+      .financial-table tr:nth-child(even) {
+        background-color: #f8f9fa;
+      }
+
+      .download-btn {
+        background-color: #2c5f5f;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 20px 0;
+        transition: background-color 0.3s;
+      }
+
+      .download-btn:hover {
+        background-color: #1a4040;
+      }
+
+      .screenshots-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+      }
+
+      .screenshot-item {
+        text-align: center;
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+      }
+
+      .screenshot-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+      }
+
+      .screenshot-item h4 {
+        color: #2c5f5f;
+        margin: 10px 0 5px 0;
+        font-size: 1.1em;
+      }
+
+      .screenshot-item p {
+        color: #666;
+        font-size: 0.9em;
+        margin: 0;
+        text-align: center;
+      }
+
+      .large-screenshot {
+        text-align: center;
+        margin: 30px 0;
+      }
+
+      .large-screenshot img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      .large-screenshot h4 {
+        color: #2c5f5f;
+        margin: 15px 0 5px 0;
+        font-size: 1.2em;
+      }
+
+      @media print {
+        .download-btn {
+          display: none;
+        }
+        .screenshots-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Zdravé Maznáčiky</h1>
+      <h2>Startup Business Plan</h2>
+      <p style="margin-top: 20px; color: #666; font-style: italic">
+        E-commerce startup zameraný na ekologické produkty pre domácich
+        miláčikov
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Úvod</h2>
+      <p>
+        Zdravé Maznáčiky je e-commerce startup zameraný na predaj ekologických,
+        zdravých a prírodných produktov pre domácich miláčikov. Naša vízia je
+        priniesť na slovenský a európsky trh udržateľné produkty, ktoré
+        podporujú zdravie zvierat, chránia životné prostredie a poskytujú
+        zákazníkom spoľahlivý a moderný online nákupný zážitok.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Vizuálna prezentácia webu</h2>
+      <p>
+        Nasledujúce screenshoty ukazujú aktuálny stav webstránky a jej kľúčové
+        funkcie:
+      </p>
+
+      <div class="screenshots-grid">
+        <div class="screenshot-item">
+          <img
+            src="/images/SCR-20250821-pqdd.png"
+            id="screenshot1"
+            alt="Homepage - Hlavná stránka"
+          />
+          <img
+            src="/images/SCR-20250821-pqit.png"
+            id="screenshot1-1"
+            alt="Homepage - Hlavná stránka"
+          />
+          <h4>Hlavná stránka</h4>
+          <p>Úvodná stránka s clean dizajnom a jasným call-to-action</p>
+        </div>
+
+        <div class="screenshot-item">
+          <img
+            src="images/SCR-20250821-rllr.png"
+            id="screenshot2"
+            alt="Mobilná verzia"
+          />
+
+          <img
+            src="images/SCR-20250821-rntl.png"
+            id="screenshot2-2"
+            alt="Mobilná verzia"
+          />
+
+          <h4>Mobilná verzia</h4>
+          <p>Responzívny dizajn optimalizovaný pre mobilné zariadenia</p>
+        </div>
+
+        <div class="screenshot-item">
+          <img
+            src="images/SCR-20250821-pqsu.png"
+            id="screenshot3"
+            alt="Produktová sekcia"
+          />
+          <h4>Produktová sekcia</h4>
+          <p>Prehľadné zobrazenie produktov s filtrami a kategóriami</p>
+        </div>
+
+        <div class="screenshot-item">
+          <img
+            src="images/SCR-20250821-prhg.png"
+            id="screenshot4"
+            alt="Navigácia a menu"
+          />
+          <h4>Detail produktu</h4>
+          <p>Intuitívna navigácia a používateľské menu</p>
+        </div>
+
+        <div class="screenshot-item">
+          <img
+            src="images/SCR-20250821-prsn.png"
+            id="screenshot5"
+            alt="Blog sekcia"
+          />
+          <h4>Kontakt stánka</h4>
+          <p>
+            Kompletné kontaktné informácie s trojitým spôsobom komunikácie a FAQ
+            sekciou
+          </p>
+        </div>
+
+        <div class="screenshot-item">
+          <img
+            src="images/SCR-20250821-psee.png"
+            id="screenshot6"
+            alt="Detailná stránka produktu"
+          />
+          <img
+            src="images/SCR-20250821-psqr.png"
+            id="screenshot6"
+            alt="Detailná stránka produktu"
+          />
+          <h4>Nákupný košík a Pokladňa</h4>
+          <p>
+            Bočný panel s produktmi, checkout proces s fakturačnými údajmi a
+            výberom platby
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="large-screenshot">
+        <img id="screenshot7" alt="Desktop verzia - celkový pohľad" />
+        <h4>Desktop verzia - kompletný prehľad</h4>
+        <p>
+          Celkový pohľad na desktop verziu webu s všetkými kľúčovými sekciami
+        </p>
+      </div>
+
+      <div class="large-screenshot">
+        <img id="screenshot8" alt="Pokročilé funkcie a rozhranie" />
+        <h4>Pokročilé funkcie</h4>
+        <p>Ukázka pokročilých funkcií a administratívneho rozhrania</p>
+      </div>
+    </div> -->
+
+    <div class="section">
+      <h2>Dizajn a technické riešenie</h2>
+
+      <p>
+        Web Zdravé Maznáčiky je navrhnutý v modernom a minimalistickom štýle,
+        ktorý odráža hodnoty značky - prírodnosť, udržateľnosť a dôraz na
+        zdravie domácich miláčikov.
+      </p>
+
+      <h3>Farebná paleta</h3>
+      <div class="color-palette">
+        <div class="color-item">
+          <div
+            class="color-square"
+            style="background-color: #ffffff; border: 2px solid #ddd"
+          ></div>
+          <span><strong>Čistá biela</strong> - pozadie a vzdušnosť</span>
+        </div>
+        <div class="color-item">
+          <div class="color-square" style="background-color: #f0f7f7"></div>
+          <span><strong>Jemná sivomodrá</strong> - podkladové plochy</span>
+        </div>
+        <div class="color-item">
+          <div class="color-square" style="background-color: #2c5f5f"></div>
+          <span><strong>Tmavá zelenomodrá</strong> - primárna farba</span>
+        </div>
+      </div>
+
+      <h3>Technická platforma</h3>
+      <div class="highlight">
+        <p>
+          <strong>WordPress + WooCommerce</strong> s AI asistentom pre
+          jednoduchšiu správu obsahu a budúce rozšírenia. Dizajn je plne
+          responzívny - optimalizovaný pre mobily, tablety aj desktopy.
+        </p>
+      </div>
+
+      <h3>Štruktúra webu</h3>
+      <ul>
+        <li>
+          <strong>Domov (Home)</strong> - prehľadná úvodná stránka s
+          call-to-action
+        </li>
+        <li>
+          <strong>Obchod</strong> - produktová sekcia s kategóriami, filtrami a
+          detailným vyhľadávaním
+        </li>
+        <li>
+          <strong>Špeciálne ponuky</strong> - balíčky, zľavy a prepojenie s
+          MailPoet pre newsletter marketing
+        </li>
+        <li>
+          <strong>Blog</strong> - články o zdraví a starostlivosti o zvieratá
+          (SEO podpora)
+        </li>
+        <li><strong>Kontakt</strong> - formulár vytvorený cez WPForms Lite</li>
+        <li><strong>V príprave</strong> - galéria, služby a stránka "O nás"</li>
+      </ul>
+
+      <h3>Použité pluginy</h3>
+      <div class="tech-stack">
+        <div class="tech-item">
+          <strong>WooCommerce</strong><br />
+          Kompletné e-commerce riešenie
+        </div>
+        <div class="tech-item">
+          <strong>MailPoet</strong><br />
+          Newsletter marketing
+        </div>
+        <div class="tech-item">
+          <strong>WPForms Lite</strong><br />
+          Kontaktné formuláre
+        </div>
+        <div class="tech-item">
+          <strong>All in One SEO</strong><br />
+          Optimalizácia pre vyhľadávače
+        </div>
+        <div class="tech-item">
+          <strong>WP Fastest Cache</strong><br />
+          Zrýchlenie webu
+        </div>
+        <div class="tech-item">
+          <strong>Extendify AI</strong><br />
+          AI nástroj pre WordPress
+        </div>
+      </div>
+
+      <h4>Doplňujúce pluginy</h4>
+      <ul>
+        <li><strong>WPS Hide Login</strong> - bezpečnosť administrácie</li>
+        <li><strong>ShortPixel</strong> - optimalizácia obrázkov</li>
+        <li><strong>Complianz</strong> - GDPR cookies a súhlasy</li>
+        <li><strong>WP Mail SMTP</strong> - spoľahlivé odosielanie e-mailov</li>
+        <li><strong>Duplicator</strong> - migrácia a zálohovanie</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Hodnotová ponuka</h2>
+      <div class="highlight">
+        <h3>4 hlavné kategórie produktov:</h3>
+        <ul>
+          <li><strong>Bio kozmetika</strong> pre domácich miláčikov</li>
+          <li><strong>Ekologické misky</strong> a príslušenstvo</li>
+          <li><strong>Zdravé snacky</strong> bez chemikálií</li>
+          <li><strong>Udržateľné hračky</strong> pre zábavu</li>
+        </ul>
+      </div>
+
+      <ul>
+        <li>Dôraz na kvalitu a zdravie zvierat bez použitia chemikálií</li>
+        <li>
+          Eko-friendly prístup a marketing zameraný na vedomých zákazníkov
+        </li>
+        <li>Moderný e-shop postavený na WooCommerce s AI asistentom</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Biznis model</h2>
+      <p>
+        Naším hlavným modelom je
+        <strong>dropshipping a vlastná distribúcia</strong>. V prvej fáze budeme
+        spolupracovať s overenými európskymi a lokálnymi dodávateľmi, s
+        možnosťou neskoršieho rozšírenia sortimentu o produkty z Ázie.
+      </p>
+
+      <h3>Platobné riešenia</h3>
+      <ul>
+        <li>Stripe</li>
+        <li>GoPay</li>
+        <li>TrustPay</li>
+        <li>Bankové prevody</li>
+      </ul>
+
+      <h3>Doprava</h3>
+      <ul>
+        <li>Packeta</li>
+        <li>GLS</li>
+        <li>DPD</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Právne nastavenie</h2>
+      <ul>
+        <li>
+          E-shop bude prevádzkovaný pod registrovanou živnosťou v SR alebo SK
+          spoločnosťou s.r.o.
+        </li>
+        <li>Obchodné podmienky</li>
+        <li>Ochrana osobných údajov (GDPR)</li>
+        <li>Reklamačný poriadok</li>
+      </ul>
+      <p>
+        Všetky dokumenty budú pripravené v súlade s legislatívou EÚ a Slovenska.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Marketingová stratégia</h2>
+      <ul>
+        <li>
+          <strong>Sociálne siete:</strong> Facebook, Instagram, TikTok s dôrazom
+          na vizuálny obsah
+        </li>
+        <li>
+          <strong>Obsahový marketing:</strong> Blog a SEO články o zdraví
+          zvierat
+        </li>
+        <li><strong>Newsletter:</strong> Tipy pre zdravých maznáčikov</li>
+        <li><strong>Influencer marketing:</strong> Spolupráca s veterinármi</li>
+        <li><strong>PPC kampane:</strong> Google Ads a Meta Ads</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Finančný plán</h2>
+      <table class="financial-table">
+        <tr>
+          <th>Kategória</th>
+          <th>Suma</th>
+          <th>Poznámka</th>
+        </tr>
+        <tr>
+          <td>Počiatočné náklady</td>
+          <td>2 000 - 5 000 €</td>
+          <td>Web, marketing, právne dokumenty, základný tovar</td>
+        </tr>
+        <tr>
+          <td>Mesačný obrat (1. rok)</td>
+          <td>2 000 - 5 000 €</td>
+          <td>Predpokladané tržby</td>
+        </tr>
+        <tr>
+          <td>Zisková marža</td>
+          <td>20 - 30%</td>
+          <td>Plánovaná ziskovosť do 12 mesiacov</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Exit stratégia</h2>
+      <p>
+        Startup je navrhnutý tak, aby bol škálovateľný a atraktívny pre
+        investorov alebo potenciálnych kupcov.
+      </p>
+
+      <div class="highlight">
+        <h3>Možné exit scenáre:</h3>
+        <ul>
+          <li><strong>Predaj e-shopu</strong> na platformách ako Flippa</li>
+          <li>
+            <strong>Rozšírenie značky</strong> na európsky trh s následným
+            vstupom väčšieho investora
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      style="
+        margin-top: 50px;
+        text-align: center;
+        color: #666;
+        font-size: 0.9em;
+      "
+    >
+      <p>© 2025 Zdravé Maznáčiky - Business Plan</p>
+      <p>Dokument vytvorený: <span id="current-date"></span></p>
+    </div>
+
+    <script>
+      // Načítanie screenshotov pomocou window.fs API
+      async function loadScreenshots() {
+        const screenshots = [
+          "image1.png",
+          "image2.png",
+          "image3.png",
+          "image4.png",
+          "image5.png",
+          "image6.png",
+          "image7.png",
+          "image8.png",
+        ];
+
+        for (let i = 0; i < screenshots.length; i++) {
+          try {
+            const fileData = await window.fs.readFile(screenshots[i]);
+            const blob = new Blob([fileData], { type: "image/png" });
+            const url = URL.createObjectURL(blob);
+            const img = document.getElementById(`screenshot${i + 1}`);
+            if (img) {
+              img.src = url;
+            }
+          } catch (error) {
+            console.warn(`Nemožno načítať obrázok ${screenshots[i]}:`, error);
+          }
+        }
+      }
+
+      // Nastavenie aktuálneho dátumu
+      document.getElementById("current-date").textContent =
+        new Date().toLocaleDateString("sk-SK");
+
+      // Načítanie obrázkov po načítaní stránky
+      window.addEventListener("load", loadScreenshots);
+    </script>
+  </body>
+</html>
